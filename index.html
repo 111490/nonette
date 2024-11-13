@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abonnement et téléchargement Broderie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .button {
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .form-container {
+            margin-top: 30px;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .note {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Abonnez-vous à ma chaîne YouTube et obtenez votre broderie !</h1>
+        <p>Cliquez sur le bouton ci-dessous pour vous abonner à ma chaîne YouTube.</p>
+
+        <!-- Bouton d'abonnement YouTube -->
+        <a href="https://www.youtube.com/@myriamnumerisationbroderie6995" target="_blank">
+            <button class="button">S'abonner à ma chaîne YouTube</button>
+        </a>
+
+        <!-- Formulaire d'inscription -->
+        <div class="form-container">
+            <h2>Entrez votre nom, e-mail et nom YouTube pour recevoir la broderie</h2>
+            <form id="subscriptionForm" action="https://formsubmit.co/nonette837@gmail.com" method="POST">
+                <input type="text" name="broderie_name" placeholder="Nom de la broderie" required><br>
+                <input type="email" name="email" placeholder="Votre e-mail" required><br>
+                
+                <!-- Champ pour le nom d'utilisateur YouTube -->
+                <input type="text" name="youtube_name" placeholder="Nom d'utilisateur YouTube" required><br>
+                <small class="note">Merci de préciser sous quel nom vous êtes abonné à ma chaîne YouTube.</small><br><br>
+
+                <input type="hidden" name="_subject" value="Nouvelle demande de broderie">
+                <button class="submit-button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
